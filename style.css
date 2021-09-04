@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-size: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+
+.contentbreak {
+  max-width: 1180px;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* TOP NAVBAR */
+.contactinfo {
+  font-size: 16px;
+  color: rgb(49, 49, 49);
+  font-weight: 500;
+}
+
+.contactinfo:hover {
+  color: rgb(49, 49, 49);
+}
+
+.topnavbar {
+  background:rgb(228, 228, 228);
+  border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+
+/* 
+  MAIN NAVBAR STYLING
+*/
+
+.nav-logo {
+  width: 60px;
+  height: 60px;
+}
+
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+
+@media only screen and (max-width: 1350px) {
+  .nav-menu {
+      position: fixed;
+      top: 90px;
+      flex-direction: column;
+      background-color: #fff;
+      width: 90%;
+      left: -100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      border: 1px solid black;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .topnavbar {
+    display: none;
+  }
+}
+
+
+.sticky-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+
+/*-
+  CAROUSAL
+-*/
+
+.carouselimg {
+  min-height: 700px;
+  object-fit: cover;
+}
+
+.carousel-item {
+  background: no-repeat scroll center scroll;
+  -webkit-background-size : cover;
+  background-size: cover;
+  max-height: 700px;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.3;
+}
+
+.imgcarousal {
+  object-fit: none;
+  min-height: 700px;
+}
+
+/* 
+  WELCOME TEXT
+*/
+
+.centertext {
+  text-align: center;
+  font-size: 32px;
+  padding: 40px;
+  width: 90%;
+  margin: auto;
+}
+
+.welcomediv {
+  margin: auto;
+  background-color: rgb(243, 243, 243);
+}
+
+.ferdieshr {
+  border: 1px solid rgb(27, 80, 255);
+}
+
+.fancytext {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.paddedtextblock {
+  padding: 10px;
+}
+
+.bodytext {
+  font-size: 20px;
+  color: #6d6d6d;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-align: center;
+}
+
+/* READ MORE BLOCKS */
+
+.blockbreak {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: auto;
+}
+
+.map {
+  margin: auto;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 990px) {
+  .readmoreimg {
+    margin-top: 30px;
+  }
+}
+
+/* FOOTER */
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.content {
+  height: 70vh; }
+
+.footer-16371 {
+  padding: 7rem 0;
+  background: rgb(245, 245, 245);}
+  .footer-16371 .footer-site-logo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900; }
+    .footer-16371 .footer-site-logo a {
+      color: #4200ff; }
+  .footer-16371 .nav-links {
+    padding: 0;
+    margin: 0; }
+    .footer-16371 .nav-links li {
+      display: inline-block; }
+      .footer-16371 .nav-links li a {
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000; }
+        .footer-16371 .nav-links li a:hover {
+          color: #8f8f8f; }
+  .footer-16371 .social h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000; }
+  .footer-16371 .social ul li {
+    display: inline-block; }
+    .footer-16371 .social ul li a {
+      display: inline-block;
+      padding: 10px; }
+    .footer-16371 .social ul li.in a {
+      color: #df588a; }
+    .footer-16371 .social ul li.tw a {
+      color: #15b8ff; }
+    .footer-16371 .social ul li.fb a {
+      color: #3742d0; }
+    .footer-16371 .social ul li.dr a {
+      color: #fa38c1; }
+    .footer-16371 .social ul li.pin a {
+      color: #dd4d5a; }
+  .footer-16371 .copyright {
+    color: #999999; }
+
+.footerlogo {
+  height: 70px;
+  width: 70px;
+}
+
+.floatinglanguage {
+  position: fixed;
+  z-index: 1000;
+  max-width: 200px;
+  left: 20px;
+  top: 90%;
+}
+
+.in {
+  color: gray;
+}
